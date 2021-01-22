@@ -71,7 +71,8 @@ python manage.py loaddata dump.json
 
 ### Create superuser:
 
+1. To enter the web container (fattybobcat/yamdb:v1.12): run `docker exec -it <CONTAINER ID> bash`
+2. Run the commands: `python manage.py createsuperuser`
 
-команду для создания суперпользователя,
-команду для заполнения базы начальными даннымиdsd
-
+## Basic description api requests:
+  [redoc]()
