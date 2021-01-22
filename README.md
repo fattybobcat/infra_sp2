@@ -1,7 +1,7 @@
 # YamDB
 
 API-project running across multiple Docker containers.
-YamDB allows you to leave reviews, ratings and comments on works
+YamDB allows you to leave reviews, ratings and comments on creation
 
 
 ## Getting Started
