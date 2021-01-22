@@ -33,7 +33,7 @@ The stack uses Python and Postgres for storage.
     PASSWORD_MAIL_SENDER=                    # password for mail
   ```
 - Run in this directory:
-    `docker-compose up`
+    ```docker-compose up```
 команду для создания суперпользователя,
 команду для заполнения базы начальными даннымиdsd
 
