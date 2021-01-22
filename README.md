@@ -22,16 +22,18 @@ The stack uses Python and Postgres for storage.
 
 - Copy this repository to your local machine;
 - Create `.env` file with the following constants:
-    `DB_ENGINE=django.db.backends.postgresql'
-    `'DB_NAME=postgres`
-      POSTGRES_USER=postgres # логин для подключения к базе данных
-      POSTGRES_PASSWORD=postgres1 # пароль для подключения к БД (установите свой)
-      DB_HOST=db # название сервиса (контейнера)
-      DB_PORT=   # порт для подключения к БД
-      MAIL_SENDER=
-      PASSWORD_MAIL_SENDER=                                    
-  '''
-
+  ```
+    DB_ENGINE=django.db.backends.postgresql  # indicate that we are working with postgresql
+    DB_NAME=postgres                         # database name
+    POSTGRES_USER=login                      # login to connect to the database
+    POSTGRES_PASSWORD=password               # password to connect to the database (set your own)
+    DB_HOST=db                               # service (container) name
+    DB_PORT=                                 # port for connecting to the database
+    MAIL_SENDER=                             # mail for sending confirmation code
+    PASSWORD_MAIL_SENDER=                    # password for mail
+  ```
+- Run in this directory:
+    `docker-compose up`
 команду для создания суперпользователя,
 команду для заполнения базы начальными даннымиdsd
 
