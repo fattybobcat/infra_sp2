@@ -75,4 +75,13 @@ python manage.py loaddata dump.json
 2. Run the commands: `python manage.py createsuperuser`
 
 ## Basic description api requests:
-  [redoc]()
+  [redoc](https://github.com/fattybobcat/infra_sp2/blob/master/redoc.yaml)
+  
+## Authors
+
+* Petruk Aleksandr - Python Developer
+
+
+## License
+
+This project is licensed under the MIT License 
