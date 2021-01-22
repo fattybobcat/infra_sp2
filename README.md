@@ -33,7 +33,45 @@ The stack uses Python and Postgres for storage.
     PASSWORD_MAIL_SENDER=                    # password for mail
   ```
 - Run in this directory:
-    ```docker-compose up```
+    ``` 
+    docker-compose up
+    ```
+- Great! Server is running!
+
+### Database setup
+
+There is no data in our database now. Need to install migrations and write test database
+
+1. Open a new terminal and run:
+```
+  docker container ls
+```
+  You will see next (example):
+```
+CONTAINER ID   IMAGE                     COMMAND                  CREATED          STATUS          PORTS                    NAMES
+f19f76f82f0c   fattybobcat/yamdb:v1.12   "gunicorn api_yamdb.…"   47 seconds ago   Up 46 seconds   0.0.0.0:8000->8000/tcp   infra_sp2_web_1
+b93f460c8dbb   postgres:12.4             "docker-entrypoint.s…"   47 seconds ago   Up 46 seconds   5432/tcp                 infra_sp2_db_1
+```
+2. Go to the directory where the given project is stored and run the following command to copy the database dump fixture.json to the project:
+  ```
+  docker cp  fixture.json <CONTAINER ID>:/
+  ```
+3. To enter the web container (fattybobcat/yamdb:v1.12): run `docker exec -it <CONTAINER ID> bash`
+4. Make migrate `python manage.py migrate`
+5. To load the database run the commands:
+```
+  python3 manage.py shell
+# execute in the opened terminal:
+>>> from django.contrib.contenttypes.models import ContentType
+>>> ContentType.objects.all (). Delete ()
+>>> quit ()
+
+python manage.py loaddata dump.json
+```
+
+### Create superuser:
+
+
 команду для создания суперпользователя,
 команду для заполнения базы начальными даннымиdsd
 
