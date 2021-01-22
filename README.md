@@ -15,9 +15,13 @@ Download [Docker Desktop](https://www.docker.com/products/docker-desktop) for Ma
 
 ### Containers
 
-The stack uses Python, and Postgres for storage.
+The stack uses Python and Postgres for storage.
 
-### 
+## INSTALLATION
+
+- Copy this repository to your local machine
+- Create '.env' file  
+
 команду для создания суперпользователя,
 команду для заполнения базы начальными даннымиdsd
 
