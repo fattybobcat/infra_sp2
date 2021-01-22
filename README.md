@@ -22,14 +22,15 @@ The stack uses Python and Postgres for storage.
 
 - Copy this repository to your local machine;
 - Create `.env` file with the following constants:
-  ``` DB_ENGINE=django.db.backends.postgresql     #
-      DB_NAME=postgres # имя базы данных
+    `DB_ENGINE=django.db.backends.postgresql'
+    `'DB_NAME=postgres`
       POSTGRES_USER=postgres # логин для подключения к базе данных
       POSTGRES_PASSWORD=postgres1 # пароль для подключения к БД (установите свой)
       DB_HOST=db # название сервиса (контейнера)
       DB_PORT=   # порт для подключения к БД
       MAIL_SENDER=
-      PASSWORD_MAIL_SENDER=                                                                '''
+      PASSWORD_MAIL_SENDER=                                    
+  '''
 
 команду для создания суперпользователя,
 команду для заполнения базы начальными даннымиdsd
