@@ -20,7 +20,7 @@ The stack uses Python and Postgres for storage.
 ## INSTALLATION
 
 - Copy this repository to your local machine
-- Create '.env' file  
+- Create `.env` file  
 
 команду для создания суперпользователя,
 команду для заполнения базы начальными даннымиdsd
