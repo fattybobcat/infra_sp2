@@ -63,8 +63,8 @@ b93f460c8dbb   postgres:12.4             "docker-entrypoint.s…"   47 seconds a
   python3 manage.py shell
 # execute in the opened terminal:
 >>> from django.contrib.contenttypes.models import ContentType
->>> ContentType.objects.all (). Delete ()
->>> quit ()
+>>> ContentType.objects.all().Delete()
+>>> quit()
 
 python manage.py loaddata dump.json
 ```
